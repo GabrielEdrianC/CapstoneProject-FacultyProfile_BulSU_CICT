@@ -1,0 +1,1174 @@
+
+/*SCROLLBAR CSS*/
+
+*::-webkit-scrollbar {
+  width: 2px; /* Set the width of the scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Customize the scrollbar track */
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: #FF5600; /* Customize the scrollbar thumb */ 
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #FF5600; /* Customize the scrollbar thumb on hover */
+}
+
+/* Optionally, style scrollbar buttons (up and down arrows) */
+*::-webkit-scrollbar-button {
+  border-radius: 50px;
+  background-color: #aaaaaac1;
+  height: 10px;
+}
+
+/*UL LI CSS*/
+#ul-add {
+  font-size: 10px;
+  padding-left: 20px; /* Adjust the padding as needed */
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#li-add {
+  font-size: 15px;
+  margin-left: 20px;
+  margin-bottom: 5px; /* Add some vertical spacing between list items */
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#addfaculty {
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  margin: 0 0 20px 0;
+}
+
+/* Scrollable div-con */
+#div-con{
+  height: 500px;
+}
+
+
+#Input{
+  border:1px solid #FF5600;
+  width: 400px;
+  padding: 5px;
+  margin: 0px 0px 8px 0px;
+}
+
+#Input-img{
+  border:1px solid #FF5600;
+  width: 400px;
+  padding: 5px;
+  margin: 0px 0px 5px 0px;
+}
+
+#input-edit{
+  border:1px solid #FF5600;
+  width: 400px;
+  margin: 0px 0px 5px 0px;
+}
+
+select{
+  background: #f7f7f7;
+  border:1px solid #e44c00;
+  width: 400px;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 1px 0px 5px 0px;
+}
+
+#prompt{
+  text-align: center;
+  font-style: italic;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 200px;
+  margin:0 0 10px 0;
+  border: 2px solid #FF5500;
+  background-color: #00000000;
+  border-radius:50px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+#search-message{
+  padding: 100px;
+  margin: 0 0 0 100px;
+  font-size: 35px;
+  width: 700px;
+}
+
+
+.div-icon.archived {
+  background-color: #ffd49f; /* Change the background color to a pale red for archived items */
+  border: 1px solid #ffad66; /* Add a border for emphasis */
+  opacity: 0.7; /* Reduce opacity for a faded appearance */
+  cursor: not-allowed; /* Change cursor to not-allowed to indicate it's inactive */
+  /* You can add more styles as needed */
+}
+/* Style for the custom container */
+.custom-container {
+  display: flex;
+  width: 100%;
+  
+}
+/* Style for the custom sidebar */
+.custom-sidebar {
+  width: 20%;
+  height: 739px;
+  border-right: solid 5px #FF5500;
+  background-color: #dedede;
+  color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Style for the sidebar image */
+#CustomAdminicon_sidebar {
+  max-width: auto;
+  height: auto;
+}
+
+/* Style for the sidebar text */
+.custom-sidebar-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style for the custom main content container */
+.custom-main-content {
+  background-image: url('pimentel_bg3.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80%;
+  padding: 10px;
+  background-color: #b0aeae;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.custom-main-content h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.custom-main-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Add opacity to the scrollable-container */
+/* Increase opacity for the scrollable-container */
+.scrollable-add-container {
+  overflow: auto;
+  max-height: 600px;
+  width: 100%;
+  background-color: rgba(236, 236, 236, 0.4);
+  padding: 20px;
+}
+
+#scrollable-list{
+  max-height: 180px;
+  overflow: scroll;
+}
+#fType{
+  margin-bottom: 3px;
+  font-size: 10px;
+  
+}
+
+#fType:hover{
+  color: #ffffff;
+  background-color: #FF883B;
+}
+
+#fType:active{
+  color: #ffffff;
+  background-color: #FF883B;
+}
+
+#fType-accordion{
+  text-align: left;
+  padding: 10px;
+  border: none;
+  font-weight: 600;
+
+  color: #FF883B;
+  display: static;
+  background-color: #f3f3f3;
+  transition: color .5s;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#fType-accordion:hover{
+  color: #ffffff;
+  background-color: #FF883B;
+}
+
+
+
+/* WAG GALAWIN  */
+/* Grid Container Styles */
+.grid-container {
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #0000003d;
+  padding:10px;
+  border-radius: 10px;
+  max-height: 520px;
+  overflow-y: scroll;
+}
+
+/* WAG GALAWIN  */
+.div-icon {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
+  background-color: #ffffff7c;
+  color: #0056b3;
+}
+
+.div-icon img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 0 20px 0;
+}
+
+.div-icon h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0 0 0;
+}
+
+.mode{
+  width: 30%; /* Adjust width to fit the content well */
+  background-color: #b0aeae;
+  border-radius: 15px;
+}
+
+h3{
+  
+  color:#FF5500;
+}
+
+.custom-main-content-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-main-content-button:hover {
+  background: #fd7a39;
+}
+.custom-modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 500px;
+ 
+  width: 100%; /* Use 100% width for better responsiveness */
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.custom-modal input {
+  width: 10%;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #FF5600;
+  border-radius: 5px;
+  outline: none;
+}
+
+.custom-modal button {
+  padding: 5px 10px;
+  margin: 10px;
+  background: #fd7a39;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-modal button:hover {
+  background: #ca5c24;
+}
+
+#input-research{
+  padding: 5px;
+  border-color:#FF5600;
+  border-radius: 5px;
+  margin:0 0 10px 0;
+}
+
+#research-div{
+  padding: 5px;
+  border-color:#FF5600;
+  border-radius: 5px;
+  margin:0 0 10px 0;
+}
+
+#add-author,#minus-author{
+  font-weight: 600;
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  background-color: #ff6e26;
+}
+
+/*Button CSS*/
+.custom-button-container{
+  
+  padding: 5px 8px 0px 0px;
+}
+
+#logoutbtn {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 3px;
+  height:30px;
+  width:150px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+.facultyArch{
+  margin: 0px 0px 5px 0px;
+  font-size: 15px;
+  padding: 7px;
+  height:30px;
+ 
+  border-radius: 5px;
+  color: #FF5703;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: color .5s ;
+  margin-bottom: 3px;
+}
+
+.archive{
+  font-size: 15px;
+ padding: 7px;
+ margin: 0px 0px 5px 0px;
+  height:30px;
+  
+  border-radius: 5px;
+  color: #FF5703;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: color .5s ;
+}
+
+#viewflipbtn{
+  font-size: 15px;
+ padding: 3px;
+  height:30px;
+  width:150px;
+  border-radius: 5px;
+  color: #FF5703;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: color .5s ;
+}
+
+#viewflipbtn:hover{
+  color: #ffffff;
+  background-color: #FF5703;
+}
+
+
+#addbtn {
+  background-color: #fd7a39; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 100px;
+  padding: 6px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#addbtn:hover {
+  background-color: #ca5c24; /* Color on hover */
+}
+
+#editbtn:hover {
+  background: #dd8212;
+}
+
+#viewbtn,#editbtn ,#archiveButton {
+  background-color: #FF5600; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 50px;
+  padding: 2px;
+  margin: 0 3px 3px 3px;
+  width: 150px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+#archiveButton:hover {
+  background-color: #550000; /* Color on hover */
+}
+
+#addfacultybtn{
+  background-color: #fd7a39; /* Change this to the desired color on hover */
+  color: #FFF;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#addfacultybtn:hover{
+  background-color: #fd7a39; /* Change this to the desired color on hover */
+}
+
+#addresearch-button{
+  background-color: #FF5500; /* Change this to the desired color on hover */
+  color: #FFF;
+  font-weight: bold;
+  border: none;
+  margin: 6px 0 0 0;
+  border-radius: 100px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background-color 0.3s;
+}
+
+#addresearch-button:hover{
+  background-color: #ca5c24; /* Change this to the desired color on hover */
+}
+
+
+/* Style for the modal buttons */
+#modaladdbtn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fd7a39;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+#modaladdbtn:hover {
+  background: #fd7a39;
+}
+#modalclosebtn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ff2121;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+#modalclosebtn:hover {
+  background: #c20000;
+}
+
+.thclose,.researchclose {
+  position: sticky;
+  padding: 0px 5px 0px 0px;
+  color: #ffffff;
+  float:right;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover, .close:focus, .thclose:hover, .thclose:focus, .researchclose:hover, .researchclose:focus {
+  transition: color .2s; 
+  color: rgb(255, 66, 66);
+  text-decoration: none;
+}
+
+/* Style for the logout button */
+#CustomLogoutButton {
+  width: 100px;
+  margin-top: 10px;
+  background-color: #ca2424;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#CustomViewButton{
+  width: 100px;
+  margin-top: 10px;
+  background-color:#fd7a39;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#CustomLogoutButton:hover {
+  background-color: #941616;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#CustomViewButton:hover{
+  background-color: #3554b9;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.custom-logout-container{
+  margin-top: 180px;
+}
+
+.custom-modal h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.custom-modal p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.custom-modal-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fd7a39;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.custom-modal-button:hover {
+  background: #fd7a39;
+}
+
+.add-modal-overlay, #modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.301); /* Darker semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+}
+
+.edit-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+}
+
+/* Modal CSS */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Set a maximum width */
+  height: auto; /* Allow the modal to expand vertically */
+}
+
+
+
+.modal-content  {
+  height: 700px;
+  font-size: 2px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%; /* Make the modal content width 100% */
+  max-width: 87%; /* Adjust the maximum width as needed */
+  text-align: center;
+  padding: 20px;
+}
+
+th#title{
+  padding: 0px;
+}
+
+p.modal-title{
+  color: #ffffff;
+  font-size: 20px;
+  margin: 5px 0 0 0;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.modal-details {
+  text-align: justify;
+  
+}
+
+.modal-details img {
+  display: block; /* Ensure it's a block-level element */
+  margin: 0 auto; /* Center horizontally */
+ margin-top: 6px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.modal-details p {
+  font-size: 15px;
+  margin: 7px 0;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  margin: 10px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.modal-button:hover {
+  background: #c20000;
+}
+
+/* Research Modal */
+.research-modal-overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.376); /* Darker semi-transparent background */
+  backdrop-filter: blur(2px); /* Adds a blur effect to the background */
+}
+
+.research-modal-content {
+  transform: translate(0%, -45%);
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: 18% auto;
+  padding: 5px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: auto; /* Add this line */
+  z-index: 1;
+}
+
+
+/*RESEARCH TABLE CSS*/
+
+#research-list {
+  margin-top: 20px;
+}
+
+#research-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.research-table {
+  margin:  auto;
+  width: 100%;
+}
+
+.research-table th {
+  color: #ffffff;
+  background-color: #ff9d46;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.research-table th, .research-table td {
+  font-size: 10px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+.research-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Style links in the "Link" column */
+.research-table a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Remove underlines from links on hover */
+.research-table a:hover {
+  text-decoration: none;
+}
+
+/* Center-align text in the "Link" column */
+.research-table td:last-child {
+  text-align: center;
+}
+
+/* Adjust padding and margin for better spacing */
+.research-item td, .research-item th {
+  font-size: 15px;
+  padding: 5px;
+  margin: 0;
+}
+
+#research-label{
+  font-size: 15px;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 0;
+}
+
+th {
+  border-radius: 10px;
+  height: 40px;
+  border-collapse: collapse;
+  background-color: #ff6e26;
+  color: #fff;
+}
+
+/* RESEARCH MODAL CSS*/
+.research-modal-overlay{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.376); /* Darker semi-transparent background */
+  backdrop-filter: blur(2px); /* Adds a blur effect to the background */
+  z-index: 1; /* Higher z-index for the overlay */
+}
+
+.research-modal-content {
+  transform: translate(0%, -45%);
+  flex-direction: column;
+  background-color: #fefefe;
+  margin: 18% auto;
+  padding: 5px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: auto; /* Add this line */
+  z-index: 1; /* Higher z-index for the content */
+}
+
+.research-table tbody td#link, .research-table tbody td#title {
+  max-width: 150px; /* Set a maximum width for the link column */
+  white-space: nowrap; /* Prevent text from wrapping within the cell */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Add an ellipsis (...) for long links */
+}
+
+.research-table tbody td#link a {
+  display: block; /* Display links as block elements for proper ellipsis display */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Add an ellipsis (...) for long links */
+}
+
+.research-table thead th:first-child, .research-table tbody td:first-child {
+  width: 200px; /* Set the desired width for the "Title" column */
+}
+
+/* Add this CSS to your stylesheet or in a <style> tag in your HTML document */
+.research-table thead th:nth-child(2), .research-table tbody td:nth-child(2), #research-table th:nth-child(3),
+#research-table td:nth-child(3), #research-table th:nth-child(5), #research-table td:nth-child(5) {
+  width: 150px; /* Set the desired width for the "Author" column */
+}
+
+#input-research{
+  border-color: #FF5500;
+  padding: 5px;
+  border-radius: px;
+}
+
+#img-show{
+  border-radius: 100px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+}
+#input-div{
+  border-color: #FF5500;
+  width: 300px;
+}
+#addbutton, #minusbutton{
+  margin: 0 0 0 5px;
+  width: 30px;
+  height: 30px;
+  padding-inline: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#researchdeletebtn{
+  border: none;
+  padding: 5px;
+  border-radius: 100px;
+  color: #ffffff;
+  background-color: #ff2200;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.modal-details {
+
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+ul.cert-scroll {
+  width: 100%;
+  max-height: 70px; /* You can adjust the height as needed */
+  overflow-y: auto;
+}
+
+
+
+.research-add-modal-content {
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1; /* Set a higher z-index value to make it the highest */
+}
+@media screen and (max-width: 1400px) {
+  .research-modal-content{
+  margin-top: 350px;
+}
+}
+
+/* Ensure that the modal is centered */
+@media screen and (max-width: 900px) {
+
+  .custom-button-container{
+    padding: 80px 0px 0px 0px;
+  }
+.custom-container {
+  flex-direction: column;
+}
+.modal-details p {
+  font-size: 13px;
+  margin: 10px 0;
+}
+#addfaculty {
+  position: absolute;
+  
+  top: 20px;
+  right: 30%;
+  margin: 0 0 20px 0;
+}
+.scrollable-grid-container{
+  width: 100%;
+  margin-top: 70px;
+}
+#CustomAdminicon_sidebar {
+  max-width: 50%;
+  max-height: 50%;
+}
+.custom-sidebar{
+  align-items: center;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Set a maximum width */
+  height: auto; /* Allow the modal to expand vertically */
+}
+.custom-sidebar {
+  width: 100%;
+  height: 20%; /* Adjust the height to make it smaller, for example, 20% */
+}
+
+.custom-main-content {
+  width: 100%;
+  height: 80%; /* Adjust the height for the main content, e.g., 80% */
+}
+.custom-logout-container{
+  margin-top: 100px;
+}
+/* Update scrollable-container styles for mobile */
+.scrollable-container {
+  max-height: 300px; /* Adjust the max-height for mobile screens */
+  padding: 10px; /* Adjust the padding for mobile screens */
+}
+
+/* Adjust the grid-container properties for better mobile spacing */
+.grid-container {
+  grid-template-columns: 1fr; /* Change to a single column layout for mobile */
+  margin-top: 110px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.div-icon {
+  height: auto; /* Adjust the height to fit the content */
+  width: 100%; /* Adjust the width of grid items for better mobile spacing */
+}
+.research-modal-content{
+  margin-top: 350px;
+}
+}
+@media screen and (max-width: 768px) {
+.research-modal-content {
+  width: 80%;
+}
+.modal-details p {
+  font-size: 12px;
+  margin: 7px 0;
+}
+
+
+#addfaculty {
+  position: absolute;
+  top: 20px;
+  right: 3%;
+  margin: 0 0 20px 0;
+}
+.scrollable-grid-container{
+  width: 100%;
+  margin-top: 70px;
+}
+#CustomAdminicon_sidebar {
+  max-width: 50%;
+  max-height: 50%;
+}
+.custom-logout-container{
+  margin-top: 40px;
+}
+/* Show the research modal when it's open */
+.research-modal.open {
+  display: block;
+}
+.modal {
+  width: 90%; /* Adjust the width for smaller screens */
+}
+#CustomAdminicon_sidebar {
+  max-width: 80%;
+  max-height: 80%;
+}
+.custom-sidebar{
+  border-left: solid 5px #FF5500;
+  align-items: center;
+}
+.scrollable-grid-container{
+  width: 100%;
+}
+.modal-content {
+  max-width: 100%; /* Allow modal content to take full width */
+}
+.research-modal-content {
+  width: 90%; /* Adjust the width for smaller screens */
+}
+
+.close {
+  font-size: 24px; /* Increase close button size for mobile */
+}
+.custom-modal {
+  padding: 10px; /* Reduce padding for smaller screens */
+}
+
+.custom-modal input {
+  padding: 8px; /* Reduce input padding for smaller screens */
+}
+
+.custom-modal button {
+  padding: 8px 16px; /* Reduce button padding for smaller screens */
+  font-size: 16px; /* Decrease font size for smaller screens */
+}
+}
+@media screen and (max-width: 470px) {
+  #li-add {
+    font-size: 15px;
+   text-align: center;
+    margin-left: 10px;
+    margin-bottom: 5px; /* Add some vertical spacing between list items */
+    font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+  }
+}
+@media screen and (max-width: 375px) {
+  
+.research-modal-content {
+  width: 80%;
+}
+.modal-details p {
+  font-size: 12px;
+  margin: 10px 0;
+}
+.modal-details img {
+  display: block; /* Ensure it's a block-level element */
+  margin: 0 auto; /* Center horizontally */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#addfaculty {
+  position: absolute;
+  top: 20px;
+  right: 3%;
+  margin: 0 0 20px 0;
+}
+.scrollable-grid-container{
+  width: 100%;
+  margin-top: 70px;
+}
+#CustomAdminicon_sidebar {
+  max-width: 50%;
+  max-height: 50%;
+}
+.custom-logout-container{
+  margin-top: 40px;
+}
+/* Show the research modal when it's open */
+.research-modal.open {
+  display: block;
+}
+.modal {
+  width: 90%; /* Adjust the width for smaller screens */
+}
+#CustomAdminicon_sidebar {
+  max-width: 80%;
+  max-height: 80%;
+}
+.custom-sidebar{
+  align-items: center;
+}
+.scrollable-grid-container{
+  width: 100%;
+}
+.modal-content {
+  max-width: 100%; /* Allow modal content to take full width */
+}
+.research-modal-content {
+  width: 90%; /* Adjust the width for smaller screens */
+}
+
+.close {
+  font-size: 24px; /* Increase close button size for mobile */
+}
+.custom-modal {
+  padding: 10px; /* Reduce padding for smaller screens */
+}
+
+.custom-modal input {
+  padding: 8px; /* Reduce input padding for smaller screens */
+}
+
+.custom-modal button {
+  padding: 8px 16px; /* Reduce button padding for smaller screens */
+  font-size: 16px; /* Decrease font size for smaller screens */
+}
+}

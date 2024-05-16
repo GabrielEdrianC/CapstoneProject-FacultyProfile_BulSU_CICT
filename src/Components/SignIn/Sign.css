@@ -1,0 +1,94 @@
+/* Your global styles */
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('pimentel_bg3.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* SchoolSignIn.css */
+
+.school-sign-in-container {
+  width: 400px; /* Increase the max-width to make it larger */
+  height: 400px;
+  padding: 30px;
+  background: rgba(233, 233, 233, 0.82);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-sign {
+  width: 30%;
+  margin-bottom: 20px; /* Add margin between logo and login text */
+}
+
+.school-sign-in-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fd7a39;
+}
+
+.school-sign-in-container .input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.school-sign-in-container .input-container input[type="text"],
+.school-sign-in-container .input-container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #FF5600;
+  background-color: #f3e1d8e2;
+  border-radius: 25px; /* Add rounded corners */
+  font-size: 16px;
+  padding-left: 40px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.school-sign-in-container .input-container .input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555; /* Icon color */
+}
+
+.school-sign-in-container .input-container input[type="text"]:focus,
+.school-sign-in-container .input-container input[type="password"]:focus {
+  width: 280px;
+  box-shadow: 0 2px 5px #FF5600; /* Add a box-shadow on focus */
+}
+
+.school-sign-in-container button.register-button {
+  background-color: rgb(255, 137, 79);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px; /* Add rounded corners */
+  font-size: 16px;
+  cursor: pointer;
+  transition: color .5s;
+  transition: background-color .5s;
+}
+
+.school-sign-in-container button.register-button:hover {
+  border: 1px solid #FF5600;
+  background-color: #FF5600;
+}
+
+@media (max-width: 768px) {
+  #school-sign-in-container {
+    max-width: 100%;
+  }
+}

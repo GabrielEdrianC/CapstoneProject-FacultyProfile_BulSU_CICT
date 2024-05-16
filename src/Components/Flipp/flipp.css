@@ -1,0 +1,1690 @@
+/* FLIPPAGE COMPONENT CSS */
+.custom-flipbook {
+  width: 800px; /* Set the desired width in pixels or another valid unit */
+  height: 600px; /* Set the desired height in pixels or another valid unit */
+}
+
+#main-container{
+  background-image: url(pimentel_bg.JPG);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+
+.front-page{
+  background-image: url('FRONT.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.custom-sidebar-text h2{
+  color:#fd7a39
+}
+.end-page{
+  background-image: url('END.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#facultytype {
+  
+  width: 200px;
+  padding: 10px; /* Add some padding for better spacing */
+  border: 1px solid #ccc; /* Add a border for a cleaner look */
+  border-radius: 5px; /* Round the corners */
+  background-color: #fff; /* Set a white background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  font-size: 14px; /* Adjust font size */
+  color: #333; /* Set text color */
+  cursor: pointer; /* Show pointer cursor on hover */
+
+  /* You can add more styles as needed */
+}
+
+/* Style the dropdown arrow */
+#facultytype::after {
+  content: '\25BC'; /* Unicode character for a down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure the arrow doesn't interfere with clicks */
+}
+
+
+/* Styling for the main pages */
+.flipbook-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+ overflow: hidden;
+  
+}
+.PageContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.Sidebar {
+  
+  width: 20%;
+  height: 770px;
+  border-right: solid 5px #FF5500;
+  background-color: #dedede;
+  color: #fff;
+  
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#sidebar-content{
+  margin: 100px 0 20px 0;
+  
+}
+
+#fType{
+  padding: 5px 0 5px 0;
+}
+
+#fType:hover{
+  color: #ffffff;
+  background-color: #FF883B;
+}
+
+#fType:active{
+  color: #ffffff;
+  background-color: #FF883B;
+}
+
+#fType-accordion{
+  text-align: left;
+  padding: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FF883B;
+  display: static;
+  background-color: #f3f3f3;
+  transition: color .5s;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#fType-accordion:hover{
+  color: #ffffff;
+  background-color: #FF883B;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Define a background image for even and odd pages */
+.even-page {
+  background-image: url('Odd5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.odd-page {
+  background-image: url('Even5.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* BUTTON CSS */
+input#isCollapsed {
+  &:checked {
+    & + side-nav {
+      max-width: 45px;
+      span { display: none; }
+      .icon-collapse { display: none; } 
+    }
+  }
+  &:not(:checked) {
+    & + side-nav {
+      .icon-expand { display: none; } 
+    }
+  }
+}
+
+#icon{
+  font-size: 15px;
+  margin: 0 5px 0 0;
+}
+
+#facultyProfileButton, #certificationsButton, #researchButton, #yearsort, #titlesort, #sort-container {
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 5px;
+  margin: 2px;
+  border: none;
+  color: #FF883B;
+  display: static;
+  background-color: #f3f3f3;
+  transition: color .5s;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#facultyProfileButton:hover, #certificationsButton:hover, #researchButton:hover, #yearsort:hover, #titlesort:hover {
+  color: #ffffff;
+  position: relative;
+  background-color: #FF883B;
+}
+
+
+/* Styling for page content */
+#label, label {
+  margin: 5px 0 5px 0;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#ul-div{
+  margin: 50px 0 0 0;
+}
+
+#ul-flip, #li-flip {
+  width: 250px;
+  padding: 0 0 0 0px;
+  width: 200px;
+  margin: 0px 0px 0px 30px;
+  font-size: 10px;
+  text-align: justify;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+
+
+
+
+#ul-edu, #li-edu {
+  width: 180px;
+  padding: 0 0 0 0px;
+  margin: 0px 0px 0px 30px;
+  font-size: 12px;
+  text-align: justify;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#ul-edu{
+  width: 230px;
+  max-height: 110px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#li-research {
+  margin: 0 0 0 10px;
+  max-width: 200px;
+  font-size: 15px;
+  text-align: left;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#ul-research {
+  margin: 0 0 0 50px;
+  max-width: 220px;
+  max-height: 180px;
+  overflow-y: scroll;
+  font-size: 10px;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+  overflow-x: hidden;
+}
+
+
+#facultyType {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #ffffff;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+  font-weight: 600;
+}
+
+#imgicon {
+  box-shadow: 1px 1px 10px 0px rgb(66, 66, 66);
+  /* border: solid 2px #FF883B; */
+  margin: 15px 0 0 0px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#name {
+  margin: 5px 0 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#hr1 {
+  margin: 5px 0 0 16%;
+  border-top: 2px solid #000;
+  width: 210px;
+}
+
+#hr2{
+  margin: 5px 0 5px 0px;
+  border-top: 2px solid #000;
+  width: 200px;
+}
+
+#pos {
+  margin: 0 0 0 50px;
+  width: 200px;
+  font-style: italic;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#edu{
+  margin: 0 0 5px 0;
+}
+
+#r-label{
+  font-weight: 600;
+}
+
+#res{
+  margin: 5px 0 5px 0;
+  font-weight: 600;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#dep, #emp, #edu {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#label1{
+  font-size: 13px;
+  max-width: 200px; /* Adjust the maximum width as needed */
+  word-wrap: break-word; /* Wrap words when they exceed the container's width */
+  margin: 2px 0 0 0;
+}
+
+#title, #year, #author, #link {
+  font-weight: 600;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#title, #year, #author, #link {
+  font-size: 15px;
+  margin: 5px 0 50px 0;
+}
+
+#research-label{
+  font-size: 15px;
+  font-family: "Georgia", serif;
+  justify-content: left;
+  color: #000;
+}
+
+#research-label:hover{
+  text-decoration: underline;
+  color: #dc5800;
+}
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 1120px) {
+  .PageContent{
+    display: block;
+  }
+  
+  
+    #imgicon {
+      height: 150px;
+      width: 150px;
+      margin-top: 105px;
+    }
+  
+    .Sidebar {
+      align-items: center;
+    }
+  
+    .Sidebar{
+      width: 100%;
+      height: 20%; /* Adjust the height to make it smaller, for example, 20% */
+    }
+  
+    #bday{
+      margin: 5px 0 0 0;
+      font-size: 8px;
+      font-weight: bold;
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  
+    .even-page {
+      margin-left: 5px;
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .odd-page {
+      margin-left: 5px;
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 14px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  }
+@media screen and (max-width: 820px) {
+  .PageContent{
+    display: block;
+  }
+  
+  
+    #imgicon {
+      height: 150px;
+      width: 150px;
+      margin-top: 105px;
+    }
+  
+    .Sidebar {
+      align-items: center;
+    }
+  
+    .Sidebar{
+      width: 100%;
+      height: 20%; /* Adjust the height to make it smaller, for example, 20% */
+    }
+  
+    
+  
+    .even-page {
+      margin-left: 5px;
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .odd-page {
+      margin-left: 5px;
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 14px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #imgicon {
+      height: 150px;
+      width: 150px;
+      margin-top: 105px;
+    }
+  
+    .Sidebar {
+      align-items: center;
+    }
+  
+  
+  
+    #facultyProfileButton,
+    #certificationsButton {
+      display: static;
+    }
+  
+    .flip-data {
+      width: 250px;
+    }
+  
+    .even-page {
+      margin-left: 5px;
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .odd-page {
+      margin-left: 5px;
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 14px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  }
+  
+  @media screen and (max-width: 468px) {
+    ul {
+      width: 200px;
+    }
+  
+    .Sidebar {
+      align-items: center;
+    }
+  
+  
+  
+    .even-page {
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .odd-page {
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 14px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  
+    .flip-data {
+      width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .flipbook-container{
+      padding: 100px 0 0 0;
+    }
+  
+    .Sidebar {
+      align-items: center;
+    }
+  
+  
+    .even-page {
+      margin-left: 0px;
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .odd-page {
+      margin-left: 0px;
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 14px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  
+    .flip-data {
+      width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 365px) {
+    .even-page {
+      margin-left: 15px;
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .Sidebar {
+      align-items: center;
+    }
+  
+  .PageContent{
+    margin-right: px;
+  }
+  
+    .odd-page {
+      margin-left: 10px;
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 14px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  
+    .flip-data {
+      width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 280px) {
+    .flipbook-container {
+      margin-top: 100px;
+      height: 100px;
+      width: 200px;
+      background-size: contain;
+    }
+  
+    .even-page {
+      margin-top: 100px;
+      margin-left: 5px;
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+      
+    }
+  
+    .odd-page {
+      margin-top: 100px;
+      margin-left: 5px;
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .button-container {
+      margin-left: 102px;
+    }
+  
+    #facultyProfileButton,
+    #certificationsButton {
+      display: static;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 15px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+    .flip-data {
+      width: 150px;
+    }
+    .Sidebar {
+      align-items: center;
+    }
+  }/* FLIPPAGE COMPONENT CSS */
+.custom-flipbook {
+  width: 800px; /* Set the desired width in pixels or another valid unit */
+  height: 600px; /* Set the desired height in pixels or another valid unit */
+}
+
+#main-container{
+  background-image: url(pimentel_bg.JPG);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+
+.front-page{
+  background-image: url('FRONT.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.end-page{
+  background-image: url('END.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#facultytype {
+  
+  width: 200px;
+  padding: 10px; /* Add some padding for better spacing */
+  border: 1px solid #ccc; /* Add a border for a cleaner look */
+  border-radius: 5px; /* Round the corners */
+  background-color: #fff; /* Set a white background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  font-size: 14px; /* Adjust font size */
+  color: #333; /* Set text color */
+  cursor: pointer; /* Show pointer cursor on hover */
+
+  /* You can add more styles as needed */
+}
+
+/* Style the dropdown arrow */
+#facultytype::after {
+  content: '\25BC'; /* Unicode character for a down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure the arrow doesn't interfere with clicks */
+}
+
+
+/* Styling for the main pages */
+.flipbook-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+ overflow: hidden;
+  
+}
+.PageContent {
+  display: flex;
+  flex-direction: row;
+}
+
+.Sidebar {
+  
+  width: 20%;
+  height: 770px;
+  border-right: solid 5px #FF5500;
+  background-color: #dedede;
+  color: #fff;
+  
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#sidebar-content{
+  margin: 100px 0 20px 0;
+  
+}
+
+#fType{
+  padding: 5px 0 5px 0;
+}
+
+#fType:hover{
+  color: #ffffff;
+  background-color: #FF883B;
+}
+
+#fType:active{
+  color: #ffffff;
+  background-color: #FF883B;
+}
+
+#fType-accordion{
+  text-align: left;
+  padding: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FF883B;
+  display: static;
+  background-color: #f3f3f3;
+  transition: color .5s;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#fType-accordion:hover{
+  color: #ffffff;
+  background-color: #FF883B;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Define a background image for even and odd pages */
+.even-page {
+  background-image: url('Odd5.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.odd-page {
+  background-image: url('Even5.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* BUTTON CSS */
+input#isCollapsed {
+  &:checked {
+    & + side-nav {
+      max-width: 45px;
+      span { display: none; }
+      .icon-collapse { display: none; } 
+    }
+  }
+  &:not(:checked) {
+    & + side-nav {
+      .icon-expand { display: none; } 
+    }
+  }
+}
+
+#icon{
+  font-size: 15px;
+  margin: 0 5px 0 0;
+}
+
+#facultyProfileButton, #certificationsButton, #researchButton, #yearsort, #titlesort, #sort-container {
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 5px;
+  margin: 2px;
+  border: none;
+  color: #FF883B;
+  display: static;
+  background-color: #f3f3f3;
+  transition: color .5s;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#facultyProfileButton:hover, #certificationsButton:hover, #researchButton:hover, #yearsort:hover, #titlesort:hover {
+  color: #ffffff;
+  position: relative;
+  background-color: #FF883B;
+}
+
+
+/* Styling for page content */
+#label, label {
+  margin: 5px 0 5px 0;
+  font-size: 14px;
+  font-weight: 800;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#ul-div{
+  margin: 50px 0 0 0;
+}
+
+#ul-flip, #li-flip {
+  width: 250px;
+  padding: 0 0 0 0px;
+  width: 200px;
+  margin: 0px 0px 0px 30px;
+  font-size: 10px;
+  text-align: justify;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#ul-cert, #li-cert {
+  width: 200px;
+  padding: 0 0 0 0px;
+  margin: 0px 0px 0px 25px;
+  font-size: 14px;
+  text-align: justify;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#ul-cert{
+  width: 250px;
+  max-height: 200px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#ul-edu, #li-edu {
+  width: 180px;
+  padding: 0 0 0 0px;
+  margin: 0px 0px 0px 30px;
+  font-size: 12px;
+  text-align: justify;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#ul-edu{
+  width: 230px;
+  max-height: 100px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#li-research {
+  margin: 0 0 0 10px;
+  max-width: 200px;
+  font-size: 15px;
+  text-align: left;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+
+#facultyType {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #ffffff;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+  font-weight: 600;
+}
+
+#imgicon {
+  box-shadow: 1px 1px 10px 0px rgb(66, 66, 66);
+  /* border: solid 2px #FF883B; */
+  margin: 30px 0 0 0px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#name {
+  margin: 5px 0 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#hr1 {
+  margin: 5px 0 0 16%;
+  border-top: 2px solid #000;
+  width: 210px;
+}
+
+#hr2{
+  margin: 5px 0 5px 0px;
+  border-top: 2px solid #000;
+  width: 200px;
+}
+
+#pos {
+  margin: 0 0 0 50px;
+  width: 200px;
+  font-style: italic;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#edu{
+  margin: 0 0 5px 0;
+}
+
+#r-label{
+  font-weight: 600;
+}
+
+#res{
+  margin: 5px 0 5px 0;
+  font-weight: 600;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#dep, #emp, #edu {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#label1{
+  font-size: 13px;
+  max-width: 200px; /* Adjust the maximum width as needed */
+  word-wrap: break-word; /* Wrap words when they exceed the container's width */
+  margin: 2px 0 0 0;
+}
+
+#title, #year, #author, #link {
+  font-weight: 600;
+  font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+}
+
+#title, #year, #author, #link {
+  font-size: 15px;
+  margin: 5px 0 50px 0;
+}
+
+#research-label{
+  font-size: 15px;
+  font-family: "Georgia", serif;
+  justify-content: left;
+  color: #000;
+}
+
+#research-label:hover{
+  text-decoration: underline;
+  color: #dc5800;
+}
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 1120px) {
+  .PageContent{
+    display: block;
+  }
+  
+  
+    #imgicon {
+      height: 150px;
+      width: 150px;
+      margin-top: 105px;
+    }
+  
+    .Sidebar {
+      align-items: center;
+    }
+  
+    .Sidebar{
+      width: 100%;
+      height: 20%; /* Adjust the height to make it smaller, for example, 20% */
+    }
+  
+    
+  
+    .even-page {
+      margin-left: 5px;
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .odd-page {
+      margin-left: 5px;
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 14px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  }
+@media screen and (max-width: 820px) {
+  .PageContent{
+    display: block;
+  }
+  
+  
+    #imgicon {
+      height: 150px;
+      width: 150px;
+      margin-top: 105px;
+    }
+  
+    .Sidebar {
+      align-items: center;
+    }
+  
+    .Sidebar{
+      width: 100%;
+      height: 20%; /* Adjust the height to make it smaller, for example, 20% */
+    }
+  
+    
+  
+    .even-page {
+      margin-left: 5px;
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .odd-page {
+      margin-left: 5px;
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 14px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #imgicon {
+      height: 150px;
+      width: 150px;
+      margin-top: 105px;
+    }
+  
+    .Sidebar {
+      align-items: center;
+    }
+  
+  
+  
+    #facultyProfileButton,
+    #certificationsButton {
+      display: static;
+    }
+  
+    .flip-data {
+      width: 250px;
+    }
+  
+    .even-page {
+      margin-left: 5px;
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .odd-page {
+      margin-left: 5px;
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+
+    
+#ul-edu{
+  width: 230px;
+  max-height: 110px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 14px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  }
+  
+  @media screen and (max-width: 468px) {
+    ul {
+      width: 200px;
+    }
+  
+    .Sidebar {
+      align-items: center;
+    }
+  
+  
+  
+    .even-page {
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .odd-page {
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 14px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  
+    .flip-data {
+      width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .flipbook-container{
+      padding: 100px 0 0 0;
+    }
+  
+    .Sidebar {
+      align-items: center;
+    }
+  
+  
+    .even-page {
+      margin-left: 0px;
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .odd-page {
+      margin-left: 0px;
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 14px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  
+    .flip-data {
+      width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 365px) {
+    .even-page {
+      margin-left: 15px;
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .Sidebar {
+      align-items: center;
+    }
+  
+  .PageContent{
+    margin-right: px;
+  }
+  
+    .odd-page {
+      margin-left: 10px;
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 14px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+  
+    .flip-data {
+      width: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 280px) {
+    .flipbook-container {
+      margin-top: 100px;
+      height: 100px;
+      width: 200px;
+      background-size: contain;
+    }
+  
+    .even-page {
+      margin-top: 100px;
+      margin-left: 5px;
+      background-image: url('Odd5.png');
+      background-size: cover;
+      background-position: center;
+      
+    }
+  
+    .odd-page {
+      margin-top: 100px;
+      margin-left: 5px;
+      background-image: url('Even5.png');
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .button-container {
+      margin-left: 102px;
+    }
+  
+    #facultyProfileButton,
+    #certificationsButton {
+      display: static;
+    }
+  
+    #imgicon {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  
+    #type {
+      font-size: 5px;
+      margin-top: 7px;
+      left: 50%;
+      color: #ffffff;
+      font-weight: bold;
+    }
+  
+    #name {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    hr {
+      border-top: 1px solid #000;
+    }
+  
+    #position,
+    #dep,
+    #emp,
+    #edu,
+    #cert {
+      font-size: 15px;
+      text-align: center; /* Add text alignment */
+      justify-content: center;
+      margin: 10px 0 0 12px;
+      
+      font-family: "Arial Narrow", Arial, sans-serif; /* Use "Arial Narrow" with fallbacks */
+    }
+    .flip-data {
+      width: 150px;
+    }
+    .Sidebar {
+      align-items: center;
+    }
+  }
